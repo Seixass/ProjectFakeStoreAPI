@@ -10,8 +10,10 @@ async function fetchProducts() {
       <img class="product-image" src="${product.image}" alt="${product.title}">
       <h3>${product.title}</h3>
       <p>Price: $${product.price}</p>
-      <a href="product.html?id=${product.id}" class="info-product">More Details</a> <!-- Link para a nova página -->
-    `;
+      <button>
+      <a href="./pages/product.html?id=${product.id}" class="info-product-btn">More Details</a> 
+      </button>
+      `;
     productsContainer.appendChild(productDiv);
   });
 }
