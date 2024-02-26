@@ -1,35 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  padding: 20px;
+}
+
+.product {
+  color: white;
+  background-color: rgb(53, 48, 48);
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 30px;
+  width: calc(20% - 10px); /* 25% da largura do contêiner, menos a margem */
+  margin-bottom: 20px; 
+}
+
+button {
+  background-color: rgb(99, 98, 98);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.box-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 150px;
+  height: 80px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.box-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15px;
+  gap: 1rem;
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .product {
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
+.box-btn button {
+  width: 70px;
+  height: 40px;
+  font-weight: 900;
+  background: transparent;
+  border: none;
+  margin-right: 30px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribui os produtos uniformemente ao longo do contêiner */
+  max-width: 1000px; /* Defina o máximo de largura do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
