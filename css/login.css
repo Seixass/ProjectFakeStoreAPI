@@ -55,9 +55,10 @@ body {
   align-items: center;
   height: 100vh;
   background: linear-gradient( rgb(255, 254, 254), rgb(209, 208, 208), rgb(187, 186, 186));
+  overflow-y: hidden;    /* ESCONDE A SCROLL BAR */
 }
 .login-box {
-  margin: 300px auto;
+  margin: 140px auto;
   max-width: 360px;
   width: 100%;
   padding: 20px;
