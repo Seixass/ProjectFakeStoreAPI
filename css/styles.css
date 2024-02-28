@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500&display=swap');
-
 body {
-
+  font-family: 'Ubuntu', sans-serif; /* Defina 'Ubuntu' como a fonte padrão para todo o corpo do documento */
   margin: 0;
   padding: 0;
 }
@@ -88,7 +86,7 @@ button:hover {
 
 .product-image {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 20px;
 }
 
@@ -102,8 +100,8 @@ button:hover {
 
 .product-image-description-fullscreen {
   margin-top: 80px;
-  width: 400px;
-  height: 544px; 
+  width: 300px;
+  height: auto; 
 
 }
 
@@ -111,4 +109,9 @@ button:hover {
 .info-product-btn{
   color: white;
  text-decoration: none;
+}
+
+.btn-more-info{
+  display: flex;
+  align-items: center;
 }
