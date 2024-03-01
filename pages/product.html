@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Description</title>
-  <link rel="stylesheet" href="../css/styles.css"> 
+  <link rel="stylesheet" href="../css/fullscreen-product.css"> <!-- Link para o arquivo CSS personalizado -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,14 +17,21 @@
       </div>
       <div class="box-btn">
         <button><a href="../index.html">Home</a></button>
-        <button><a href="./login.html">Login</a></button>
-        <button><a href="./registro.html">Register</a></button>
+        <button><a href="../pages/login.html">Login</a></button>
       </div>
     </nav>
   </header>
   <main>
-    <div id="product-details"></div>
+    <div class="product-details-container"> <!-- Contêiner para os detalhes do produto -->
+      <img class="product-image" src="" alt="Product Image"> <!-- Imagem do produto -->
+      <div class="product-details"> <!-- Detalhes do produto -->
+        <h2 class="product-title"></h2> <!-- Título do produto -->
+        <p class="product-description"></p> <!-- Descrição do produto -->
+        <p class="product-price"></p> <!-- Preço do produto -->
+        <button class="buy-button">Buy Now</button> <!-- Botão de compra -->
+      </div>
+    </div>
   </main>
-  <script src="../js/product.js"></script> 
+  <script src="../js/product.js"></script> <!-- Script JavaScript para buscar e exibir os detalhes do produto -->
 </body>
 </html>

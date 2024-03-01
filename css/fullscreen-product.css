@@ -1,0 +1,153 @@
+body {
+    font-family: 'Ubuntu', sans-serif; /* Defina 'Ubuntu' como a fonte padrão para todo o corpo do documento */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .box-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 80px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  
+  #box-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+    gap: 1rem;
+    color: white;
+    font-display: none;
+  }
+  
+  .box-btn button {
+    background-color: rgb(99, 98, 98);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 30px;
+    color: white;
+  }
+  
+  
+  .box-btn a{
+    color: white;
+    font-display: none; 
+    text-decoration: none;
+  }
+  
+  button:hover {
+  background-color: #0056b3;
+  border-radius: 30px;
+  transition: 0.5s;
+  }
+  
+  button {
+    background-color: rgb(99, 98, 98);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 30px;
+  }
+  
+  button a{
+    color: white;
+    font-display: none; 
+    text-decoration: none;
+  }
+  
+  button:hover {
+  background-color: #0056b3;
+  border-radius: 30px;
+  transition: 0.5s;
+  }
+
+  /* BODY */
+
+  /* Estilo do contêiner dos detalhes do produto */
+.product-details-container {
+    display: flex; /* Use flexbox para organizar os elementos */
+    max-width: 800px; /* Defina a largura máxima do contêiner */
+    margin: auto; /* Centralize o contêiner na página */
+    background-color: #fff; /* Cor de fundo */
+    padding: 20px; /* Adicione preenchimento */
+    border-radius: 10px; /* Adicione borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione sombra */
+  }
+  
+  /* Estilo da imagem do produto */
+  .product-image {
+    flex: 1; /* A imagem ocupa 1 parte do contêiner */
+    margin-right: 20px; /* Adicione margem à direita */
+    border-radius: 10px; /* Adicione borda arredondada */
+    width: 300px;
+    opacity: 1; /* Opacidade inicial */
+    transition: opacity 0.3s ease; /* Transição suave da opacidade */
+  }
+
+  .product-image:hover {
+    opacity: 0.8; /* Opacidade quando o mouse está sobre o elemento */
+  }
+  
+  /* Estilo dos detalhes do produto */
+  .product-details {
+    flex: 2; /* Os detalhes do produto ocupam 2 partes do contêiner */
+  }
+  
+  /* Estilo do título do produto */
+  .product-title {
+    font-size: 24px; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Adicione margem inferior */
+  }
+  
+  /* Estilo da descrição do produto */
+  .product-description {
+    margin-bottom: 10px; /* Adicione margem inferior */
+  }
+  
+  /* Estilo do preço do produto */
+  .product-price {
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    margin-bottom: 10px; /* Adicione margem inferior */
+  }
+  
+  /* Estilo do botão de compra */
+  .buy-button {
+    background-color: #333; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remova a borda do botão */
+    padding: 10px 20px; /* Adicione preenchimento */
+    border-radius: 5px; /* Adicione borda arredondada */
+    cursor: pointer; /* Altere o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Adicione uma transição suave */
+  }
+  
+  /* Estilo do botão de compra ao passar o mouse */
+  .buy-button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  }
