@@ -72,7 +72,7 @@ main {
 }
 
 button:hover {
-background-color: #0056b3;
+background-color: #8881e4;
 border-radius: 30px;
 transition: 0.5s;
 }
@@ -131,7 +131,39 @@ button a{
 }
 
 button:hover {
-background-color: #0056b3;
+background-color: #8881e4;
 border-radius: 30px;
 transition: 0.5s;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #box-btn {
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product {
+    width: calc(50% - 10px); /* 50% da largura do contêiner, menos a margem */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-image {
+    height: 150px;
+  }
 }

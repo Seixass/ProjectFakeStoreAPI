@@ -1,5 +1,5 @@
 body {
-    font-family: 'Ubuntu', sans-serif; /* Defina 'Ubuntu' como a fonte padrão para todo o corpo do documento */
+    font-family: 'Ubuntu', sans-serif; 
     margin: 0;
     padding: 0;
   }
@@ -60,7 +60,7 @@ body {
   }
   
   button:hover {
-  background-color: #0056b3;
+  background-color: #8881e4;
   border-radius: 30px;
   transition: 0.5s;
   }
@@ -81,73 +81,102 @@ body {
   }
   
   button:hover {
-  background-color: #0056b3;
+  background-color: #8881e4;
   border-radius: 30px;
   transition: 0.5s;
   }
 
   /* BODY */
 
-  /* Estilo do contêiner dos detalhes do produto */
 .product-details-container {
-    display: flex; /* Use flexbox para organizar os elementos */
-    max-width: 800px; /* Defina a largura máxima do contêiner */
-    margin: auto; /* Centralize o contêiner na página */
-    background-color: #fff; /* Cor de fundo */
-    padding: 20px; /* Adicione preenchimento */
-    border-radius: 10px; /* Adicione borda arredondada */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione sombra */
+    display: flex; 
+    max-width: 800px; 
+    margin: auto; 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   }
   
   /* Estilo da imagem do produto */
   .product-image {
-    flex: 1; /* A imagem ocupa 1 parte do contêiner */
-    margin-right: 20px; /* Adicione margem à direita */
-    border-radius: 10px; /* Adicione borda arredondada */
+    flex: 1; 
+    margin-right: 20px; 
+    border-radius: 10px; 
     width: 300px;
-    opacity: 1; /* Opacidade inicial */
-    transition: opacity 0.3s ease; /* Transição suave da opacidade */
+    opacity: 1; 
+    transition: opacity 0.3s ease; 
   }
 
   .product-image:hover {
-    opacity: 0.8; /* Opacidade quando o mouse está sobre o elemento */
+    opacity: 0.8; 
   }
   
   /* Estilo dos detalhes do produto */
   .product-details {
-    flex: 2; /* Os detalhes do produto ocupam 2 partes do contêiner */
+    flex: 2; 
   }
   
   /* Estilo do título do produto */
   .product-title {
-    font-size: 24px; /* Tamanho da fonte */
-    margin-bottom: 10px; /* Adicione margem inferior */
+    font-size: 24px; 
+    margin-bottom: 10px; 
   }
   
   /* Estilo da descrição do produto */
   .product-description {
-    margin-bottom: 10px; /* Adicione margem inferior */
+    margin-bottom: 10px; 
   }
   
-  /* Estilo do preço do produto */
   .product-price {
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Fonte em negrito */
-    margin-bottom: 10px; /* Adicione margem inferior */
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
   }
   
-  /* Estilo do botão de compra */
   .buy-button {
-    background-color: #333; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remova a borda do botão */
-    padding: 10px 20px; /* Adicione preenchimento */
-    border-radius: 5px; /* Adicione borda arredondada */
-    cursor: pointer; /* Altere o cursor ao passar por cima */
-    transition: background-color 0.3s; /* Adicione uma transição suave */
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    transition: background-color 0.5s; 
   }
   
-  /* Estilo do botão de compra ao passar o mouse */
+
   .buy-button:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #8881e4 ; 
   }
+
+  /* Responsividade */
+
+  @media only screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box-logo {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    #box-btn {
+      justify-content: center;
+      margin-top: 10px;
+      margin-right: 0;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+  .product-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
